@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.renguowen.BluetoothCar"
+      android:versionCode="2"
+      android:versionName="1.0.1">
+      <!-- 设置最低版本和目的版本 -->
+       <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+       
+       
+       
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 设置网络解析 12.25添加-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+    
+    
+    <application android:icon="@drawable/hicon" android:label="@string/app_name">
+        <activity android:name="com.renguowen.BluetoothCar.myMainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.renguowen.BluetoothCar.Receiver">
+  	    <intent-filter>
+         <action android:name="com.renguowen"/>
+  	    </intent-filter>
+  	   </receiver> 
+        
+        
+        <activity android:name="com.renguowen.BluetoothCar.ControlActivity">
+                  
+        </activity>
+		<activity android:name="com.renguowen.BluetoothCar.DeviceListActivity"
+		     	  android:label="select devices"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:configChanges="orientation|keyboardHidden" />
+<!-- The application's publisher ID assigned by AdMob --> 
+		<!--meta-data android:value="a151aa0bea2a44b" android:name="ADMOB_PUBLISHER_ID" /--> 
+          <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+   
+   
+                 <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <activity android:name="com.apperhand.device.android.EULAActivity"
+			android:theme="@android:style/Theme.Translucent"
+			android:configChanges="keyboard|keyboardHidden|orientation" />
+		<!--meta-data android:name="com.startapp.android.DEV_ID" android:value= "110544756"/-->
+		<meta-data android:name="com.startapp.android.APP_ID" android:value= "a151aab0e245434"/>
+    </application>
+	<!-- AdMob SDK requires Internet permission --> 
+  	 <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+	 
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.motorola.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.motorola.launcher.permission.INSTALL_SHORTCUT"/>
+<uses-permission android:name="com.motorola.dlauncher.permission.INSTALL_SHORTCUT"/>
+<uses-permission android:name="com.lge.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

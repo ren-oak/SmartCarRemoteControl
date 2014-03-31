@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#ffffffff"
+        android:textSize="22.0px" />
+
+    <TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:stretchColumns="0,1,2">
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/tbtnSwitch"
+                android:layout_width="15.0dip"
+                android:layout_height="wrap_content"
+                android:textOn="@string/btntoothclose"
+                android:textOff="@string/btntoothopen" />
+
+            <Button
+                android:id="@+id/btnDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/btnsearch" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/btnvisible" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/btnquit" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="@string/sDeviceList"
+        android:textColor="#ffffffff"
+        android:textSize="22.0px" />
+
+    <ListView
+        android:id="@+id/paired_devices1"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:stackFromBottom="false" />
+
+    <TextView android:id="@+id/title_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未配对设备"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+    />
+
+    <ListView
+        android:id="@+id/new_devices1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:stackFromBottom="false" />
+    <LinearLayout
+        android:id="@+id/ads"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="vertical" >
+        
+         <com.google.ads.AdView
+             android:id="@+id/adview3"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignParentBottom="true"
+             ads:adSize="BANNER"
+             ads:adUnitId="a151ab69a3db6c1"
+             ads:loadAdOnCreate="true"
+             android:gravity="center" />
+ 
+  		/>  
+        
+    </LinearLayout>
+
+</LinearLayout>

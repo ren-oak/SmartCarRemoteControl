@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BTClient!</string>
+    <string name="app_name">BTClient</string>
+    <string name="btntoothopen">Open Bluetooth</string>
+    <string name="btntoothclose">Close Bluetooth</string>
+    <string name="btnsearch">search for devices</string>
+    <string name="btnvisible">Visible</string>
+    <string name="btninvisible">invisible</string>
+    <string name="btnversion">Version</string>
+    <string name="btnquit">Exit</string>
+    <string name="sDeviceList">DeviceList</string>
+     <string name="select">Select</string>
+    <string name="nonewdevice">No new device</string>
+    <string name="nobluetooth">Can not open bluetooth,please make sure device have bluetooth function.</string>
+	<string name="failcon">Connection failed</string>
+	<string name="con">Connect</string>
+	<string name="suc">succeed</string>
+	<string name="rcdafail">Failed get data</string>
+	<string name="opening">Opening bluetooth</string>
+	<string name="pleaseopen">Open bluetooth first</string>
+	<string name="searching">Searching devices...</string>
+	<string name="cancel">Cancel</string>
+	<string name="storesuc">Store succeed</string>
+	<string name="filename">File name</string>
+	<string name="sure">Sure</string>
+	<string name="nosdcard">No SD card</string>
+	<string name="devaddress">Devices address</string>
+</resources>

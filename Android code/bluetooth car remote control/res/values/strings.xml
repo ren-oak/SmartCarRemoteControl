@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BTClient!</string>
+    <string name="app_name">SmartCarRC</string>
+    <string name="btntoothopen">Open Bluetooth</string>
+    <string name="btntoothclose">Close</string>
+    <string name="btnsearch">Search</string>
+    <string name="btnvisible">Visible</string>
+    <string name="btninvisible">Invisible</string>
+    <string name="btnversion">Version</string>
+    <string name="btnquit">Quit</string>
+    <string name="sDeviceList">Devices List</string>
+    <string name="select">Choose device to connect</string>
+    <string name="nonewdevice">NO new devices</string>
+    <string name="nobluetooth">Can not open blut tooth, are you sure your devices have a bluetooth?</string>
+	<string name="failcon">fail connect</string>
+	<string name="con">connect</string>
+	<string name="suc">successfully</string>
+	<string name="rcdafail">fail to get data</string>
+	<string name="opening">Opening...</string>
+	<string name="pleaseopen">please open bluetooth first</string>
+	<string name="searching">searching devices</string>
+	<string name="cancel">cancel</string>
+	<string name="storesuc">store data successfully</string>
+	<string name="filename">filename</string>
+	<string name="sure">sure</string>
+	<string name="nosdcard">No SD Card</string>
+	<string name="devaddress">device address</string>
+	<string name="btnleft">Left</string>
+	<string name="btnright">Right</string>
+	<string name="btnadvance">Forward</string>
+	<string name="btnstop">Stop</string>
+	<string name="btnback">Back</string>
+	<string name="btnbizhang">Avoidance</string>
+	<string name="btnxunxian">Patrol</string>
+	<string name="btnrediswifi"></string>
+	<string name="btnwifi"></string>
+	<string name="btnrewifi">Network Remote Control</string>
+	<string name="radiobtnwificontrol">Network Remote Control</string>
+	<string name="radiobtnwifioff">Stop Network Control</string>
+	<string name="radioon">OPEN Network Control Port</string>
+	<string name="radiooff">CLOSE Network Control Port</string>
+
+
+</resources>
